@@ -3,6 +3,14 @@ package Objects;
 public class Dog {
     String name;
 
+    public void bark() {
+        System.out.println(name + " said woof!");
+    }
+
+    public void eat() {}
+
+    public void chaseCat() {}
+
     public static void main(String[] args) {
         //Создаем объект и получаем к нему доступ
         Dog dog1 = new Dog();
@@ -11,6 +19,7 @@ public class Dog {
 
         //Создаем массив типа Dog
         Dog[] myDogs = new Dog[3];
+
         //Помещаем в него несколько элементов
         myDogs[0] = new Dog();
         myDogs[1] = new Dog();
@@ -32,11 +41,4 @@ public class Dog {
         }
     }
 
-    public void bark() {
-        System.out.println(name + "said woof!");
-    }
-
-    public void eat() {}
-
-    public void chaseCat() {}
 }

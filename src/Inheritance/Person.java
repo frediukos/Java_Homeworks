@@ -1,15 +1,16 @@
 package Inheritance;
 
 public class Person {
-    private String name;
+    private final String name;
 
     public Person(String aName) {
         name = aName;
     }
 
     public Person() {
-       name = "Olena";
+        name = "Elena";
     }
+
     public String getName() {
         return name;
     }

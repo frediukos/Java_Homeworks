@@ -1,14 +1,16 @@
 package Inheritance;
 
 public class Employee extends Person {
+
     private double salary;
     private String company;
 
-    public Employee(String aName, double aSalary, String aCompany) {
+    public Employee(String aName, String aCompany, double aSalary) {
         super(aName);
         salary = aSalary;
         company = aCompany;
     }
+
 
     public double getSalary() {
         return salary;
